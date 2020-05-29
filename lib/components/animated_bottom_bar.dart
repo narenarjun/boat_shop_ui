@@ -22,7 +22,7 @@ class _AnimatedBottomBarState extends State<AnimatedBottomBar>
   int selectedBarIndex = 0;
   @override
   Widget build(BuildContext context) {
-    print('rebuilding bottom bar');
+    // print('rebuilding bottom bar');
     return Material(
       elevation: 10,
       child: Padding(

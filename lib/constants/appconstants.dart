@@ -98,17 +98,17 @@ List<Yatch> yatches = [
     ],
   ),
   Yatch(
-    name: "V2 yarc",
+    name: "s7x waooo",
     features: [
       'Storage: Under-bow Locker',
       'Windscreen: Smocked UV-protected acrylic',
       'Cooler: Sprung-lift hatch',
     ],
     topPic:
-        "http://www.evoyachts.com/wp-content/themes/evo/media/home/product-01.png",
-    image:
         "http://www.evoyachts.com/wp-content/themes/evo/media/r4/details.png",
-    price: "\$ 458,000",
+    image:
+        "http://www.evoyachts.com/wp-content/themes/evo/media/home/product-01.png",
+    price: "\$ 758,000",
     yatchModelSpecification: [
       {
         'name': 'Length',
@@ -188,17 +188,17 @@ List<Yatch> yatches = [
     ],
   ),
   Yatch(
-    name: "V2 yarc",
+    name: "s7x waooo",
     features: [
       'Storage: Under-bow Locker',
       'Windscreen: Smocked UV-protected acrylic',
       'Cooler: Sprung-lift hatch',
     ],
     topPic:
-        "http://www.evoyachts.com/wp-content/themes/evo/media/home/product-01.png",
-    image:
         "http://www.evoyachts.com/wp-content/themes/evo/media/r4/details.png",
-    price: "\$ 458,000",
+    image:
+        "http://www.evoyachts.com/wp-content/themes/evo/media/home/product-01.png",
+    price: "\$ 680,000",
     yatchModelSpecification: [
       {
         'name': 'Length',
@@ -278,17 +278,17 @@ List<Yatch> yatches = [
     ],
   ),
   Yatch(
-    name: "V2 yarc",
+    name: "s7x waooo",
     features: [
       'Storage: Under-bow Locker',
       'Windscreen: Smocked UV-protected acrylic',
       'Cooler: Sprung-lift hatch',
     ],
     topPic:
-        "http://www.evoyachts.com/wp-content/themes/evo/media/home/product-01.png",
-    image:
         "http://www.evoyachts.com/wp-content/themes/evo/media/r4/details.png",
-    price: "\$ 458,000",
+    image:
+        "http://www.evoyachts.com/wp-content/themes/evo/media/home/product-01.png",
+    price: "\$ 982,000",
     yatchModelSpecification: [
       {
         'name': 'Length',
