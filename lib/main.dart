@@ -1,4 +1,7 @@
+import 'package:boat_shop_ui/screens/homepage.dart';
+import 'package:boat_shop_ui/screens/yatchdetail.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,27 +13,16 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.cyan,
         visualDensity: VisualDensity.adaptivePlatformDensity,
+        scaffoldBackgroundColor: Color(0xFFEFF7FC),
+        textTheme: GoogleFonts.oswaldTextTheme(),
       ),
-      home: MyHomePage(),
-    );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("Boat shop UI"),
-      ),
-      body: Center(
-        child: Container(
-          child: Text("Start to implement the screens!! "),
-        ),
-      ),
+      home: HomeScreen(),
+      routes: {
+        YatchDetailScreen.routename: (context) => YatchDetailScreen(),
+      },
     );
   }
 }
