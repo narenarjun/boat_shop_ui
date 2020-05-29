@@ -8,6 +8,7 @@ import '../constants/appconstants.dart';
 import 'yatchdetail.dart';
 
 class HomeScreen extends StatefulWidget {
+  static const String routeName = '/';
   final List<BarItem> bottomNavbarItems = [
     BarItem(
       text: 'Home',
@@ -106,7 +107,9 @@ class _HomeScreenState extends State<HomeScreen> {
                       onTap: () => Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => YatchDetailScreen(yatchID: i,),
+                          builder: (context) => YatchDetailScreen(
+                            yatchID: i,
+                          ),
                         ),
                       ),
                       child: YatchContainer(id: i),
@@ -163,14 +166,15 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                       Container(
                           child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
                           Text(
                             "Top 10 boat Launches",
-                            style: Theme.of(context).textTheme.subtitle1.copyWith(
-                              fontWeight: FontWeight.bold,
-                              letterSpacing: 1.5,
-                            ),
+                            style:
+                                Theme.of(context).textTheme.subtitle1.copyWith(
+                                      fontWeight: FontWeight.bold,
+                                      letterSpacing: 1.5,
+                                    ),
                           ),
                           SizedBox(
                             height: 6,

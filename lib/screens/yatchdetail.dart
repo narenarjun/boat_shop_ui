@@ -1,4 +1,5 @@
 import 'package:boat_shop_ui/constants/appconstants.dart';
+import 'package:boat_shop_ui/screens/cartscreen.dart';
 import 'package:flutter/material.dart';
 
 class YatchDetailScreen extends StatelessWidget {
@@ -153,30 +154,31 @@ class YatchDetailScreen extends StatelessWidget {
               ),
             ),
             GestureDetector(
-              //  ?  need to implement the cart page routing
-              onTap: () => {},
+              onTap: () => Navigator.of(context)
+                  .pushReplacementNamed(CartScreen.routeName),
               child: Container(
-                padding: const EdgeInsets.all(9),
-                margin: const EdgeInsets.all(9),
+                padding: const EdgeInsets.all(8),
+                margin: const EdgeInsets.all(16),
                 decoration: BoxDecoration(
                   color: MyColors.accentColor,
-                  borderRadius: BorderRadius.circular(9),
+                  borderRadius: BorderRadius.circular(12),
                 ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
                     SizedBox(
-                      width:8.0,
+                      width: 8.0,
                     ),
                     Text(
                       "Buy now",
                       style: Theme.of(context)
                           .textTheme
-                          .button
+                          .headline6
                           .copyWith(color: Colors.black),
                     ),
                     Container(
                       padding: const EdgeInsets.all(5),
+                      margin: const EdgeInsets.all(6),
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(9),

@@ -1,3 +1,4 @@
+import 'package:boat_shop_ui/screens/cartscreen.dart';
 import 'package:boat_shop_ui/screens/homepage.dart';
 import 'package:boat_shop_ui/screens/yatchdetail.dart';
 import 'package:flutter/material.dart';
@@ -19,9 +20,11 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: Colors.white,
         textTheme: GoogleFonts.oswaldTextTheme(),
       ),
-      home: HomeScreen(),
+      initialRoute: HomeScreen.routeName,
       routes: {
+        HomeScreen.routeName: (context) => HomeScreen(),
         YatchDetailScreen.routename: (context) => YatchDetailScreen(),
+        CartScreen.routeName: (context) => CartScreen(),
       },
     );
   }
